@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code {
+    white-space: pre;
+    font-size: 20px;
+    text-shadow: 0 0 10px lime, 0 0 20px green;
+    animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
